@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<fx:root type="javafx.scene.layout.GridPane" fx:id="Chat" layoutX="0.0" layoutY="0.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="BorderedPane" stylesheets="@uistyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<columnConstraints>
+	    <ColumnConstraints />
+	    <ColumnConstraints />
+  	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<TextArea fx:id="messages" editable="false" wrapText="true" GridPane.columnSpan="2" />
+		
+		<TextField fx:id="inputField" GridPane.hgrow="ALWAYS" onAction="#sendOnEnter" GridPane.rowIndex="1" />
+	
+		<Button mnemonicParsing="false" onAction="#sendMessageButtonClicked" text="Send" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	</children>
+</fx:root>

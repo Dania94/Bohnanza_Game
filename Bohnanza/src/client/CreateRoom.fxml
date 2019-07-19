@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" stylesheets="@uistyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.CreateRoomController">
+	<children>
+		<Label alignment="CENTER" text="Neues Spiel erstellen">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+		
+		<HBox alignment="CENTER" spacing="5.0">
+			<children>
+				<VBox fx:id="chatPlaceholder" alignment="CENTER">
+					<children>
+					</children>
+				</VBox>
+		
+		
+				<VBox layoutX="740.0" layoutY="120.0">
+					<children>
+						<Label text="Spieler in diesem Raum">
+		         			<font>
+		            			<Font size="14.0" />
+		         			</font>
+		      			</Label>
+		      			<TextArea fx:id="onlinePlayer" prefHeight="300.0" prefWidth="200.0" />
+					</children>
+				</VBox>	
+			</children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+		</HBox>
+   
+		<Label layoutX="406.0" layoutY="528.0" text="Es muessen mindestens 3 Spieler im Raum sein, um das Spiel zu starten! ">
+			<font>
+				<Font name="Arial" size="18.0" />
+			</font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+		</Label>		 
+		 
+      <HBox alignment="CENTER" spacing="10.0">
+      	<children>
+	      	<GridPane alignment="CENTER" hgap="5.0" layoutX="82.0" layoutY="556.0" vgap="5.0">
+	         <columnConstraints>
+	            <ColumnConstraints />
+	            <ColumnConstraints />
+	         </columnConstraints>
+	         <rowConstraints>
+	            <RowConstraints />
+	            <RowConstraints />
+	         </rowConstraints>
+	         <children>
+	         	<Button mnemonicParsing="false" onAction="#easyBotButtonClicked" prefHeight="32.0" prefWidth="128.0" text="einfacher Bot" />
+	            <Button mnemonicParsing="false" onAction="#hardBotButtonClicked" prefHeight="32.0" prefWidth="128.0" text="schwerer Bot" GridPane.columnIndex="1" />
+	            
+	            <Button mnemonicParsing="false" onAction="#deleteEasyButtonClicked" prefHeight="32.0" prefWidth="128.0" text="einfachen Bot loeschen" GridPane.rowIndex="1" />
+	            <Button mnemonicParsing="false" onAction="#deleteHardButtonClicked" prefHeight="32.0" prefWidth="128.0" text="schweren Bot loeschen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+	         </children>
+			</GridPane>
+	      
+			<VBox AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+			    <children>
+					<Button fx:id="start" mnemonicParsing="false" onAction="#startButtonClicked" prefHeight="26.0" prefWidth="120.0" styleClass="ButtonClickMe" text="Starten" />
+					<Button mnemonicParsing="false" onAction="#instructionsButtonClicked" prefHeight="26.0" prefWidth="120.0" text="Anleitung" />
+					<Button mnemonicParsing="false" onAction="#rankingButtonClicked" prefHeight="26.0" prefWidth="120.0" text="Bestenliste" />
+					<Button fx:id="cancel" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="26.0" prefWidth="120.0" styleClass="ButtonReturn" text="Abbrechen" />
+				</children>
+			</VBox>
+      	</children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      
+   </children>
+</VBox>

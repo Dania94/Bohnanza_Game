@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane fx:id="playArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.PlayAreaController">
+   <children>
+      <VBox spacing="4.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+         	<Button fx:id="nextPhaseButton" mnemonicParsing="false" onAction="#nextPhaseButtonClicked" prefHeight="26.0" prefWidth="180.0" text="Starte naechste Phase" />
+         	<Button fx:id="tradeButton" mnemonicParsing="false" onAction="#tradeButtonClicked" prefHeight="26.0" prefWidth="180.0" text="Handeln" />
+            <Button mnemonicParsing="false" onAction="#instructionsButtonClicked" prefHeight="26.0" prefWidth="180.0" text="Anleitung" />
+            <Button mnemonicParsing="false" onAction="#rankingButtonClicked" prefHeight="26.0" prefWidth="180.0" text="Bestenliste" />
+            
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="26.0" prefWidth="180.0" text="Verlassen" />
+         </children>
+      </VBox>
+      
+      <HBox alignment="CENTER" layoutX="40.0" layoutY="520.0" spacing="5.0">
+      	<children>
+	      <Label alignment="CENTER">Deine Taler:</Label>
+	      <TextField fx:id="taler" />
+      	</children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      
+      <HBox layoutX="40.0" layoutY="560.0" spacing="5.0">
+      	<children>
+      		<Button fx:id="beanfield1Button" onAction="#beanfield1Clicked" text="0" style="-fx-content-display: top;">
+				<graphic>
+					<ImageView fx:id="beanfield1" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+				</graphic>
+			</Button>
+			<Button fx:id="beanfield2Button" onAction="#beanfield2Clicked" text="0" style="-fx-content-display: top;">
+				<graphic>
+					<ImageView fx:id="beanfield2" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+				</graphic>
+			</Button>
+			<Button fx:id="beanfield3Button" onAction="#beanfield3Clicked" text="0" style="-fx-content-display: top;">
+				<graphic>
+					<ImageView fx:id="beanfield3" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+				</graphic>
+			</Button>
+				
+      	</children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="whatIsCurrentlyHappening" alignment="CENTER" layoutX="50.0" layoutY="370.0" text="Aktuell am Zug: Du, Phase 1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

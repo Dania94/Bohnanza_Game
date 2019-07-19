@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="javafx.scene.layout.GridPane" fx:id="PlayerInfo" layoutX="0.0" layoutY="0.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="BorderedPane" stylesheets="@uistyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Label alignment="TOP_LEFT" styleClass="LabelEmphasis" text="Spieler:" />
+      <TextField fx:id="SpielerName" editable="false" styleClass="TextfieldEmphasis" GridPane.columnIndex="1" />
+      <Label nodeOrientation="LEFT_TO_RIGHT" text="Taler:" GridPane.rowIndex="1" />
+      <TextField fx:id="Taler" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   	<Label nodeOrientation="LEFT_TO_RIGHT" text="ErnteFeld 1:" GridPane.rowIndex="2" />
+   	<TextField fx:id="Beanfield1" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label nodeOrientation="LEFT_TO_RIGHT" text="ErnteFeld 2:" GridPane.rowIndex="3" />
+      <TextField fx:id="Beanfield2" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label nodeOrientation="LEFT_TO_RIGHT" text="ErnteFeld 3:" GridPane.rowIndex="4" />
+      <TextField fx:id="Beanfield3" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

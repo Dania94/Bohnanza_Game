@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="sqlite-jdbc-3.27.2.1.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="datenbank,Server,Server.internal,client.messageboxes,img" source="1.8" sourcefiles="src/client/AccountSettingsController.java" sourcepath="src;tests" splitindex="true" use="true" version="true">
+            <link href="file:/D:/workspace/gruppe11/Bohnanza/doc/"/>
+        </javadoc>
+    </target>
+</project>

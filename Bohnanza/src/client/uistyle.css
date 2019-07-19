@@ -1,0 +1,70 @@
+.BorderedPane {
+	-fx-background-color: #F0F0F0;
+	-fx-border-color: #000000;
+	-fx-border-width: 3;
+}
+
+.LightGrayBackground {
+	-fx-background-color: #D0D0D0;
+	-fx-border-color: #909090;
+	-fx-border-width: 2;
+}
+
+.label {
+    -fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+.LabelEmphasis {
+    -fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+
+.Placeholder {
+    -fx-font-weight: normal;
+	-fx-font-size: 10px;
+	-fx-text-fill: #A000A0; 
+}
+
+.textfield {
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+.TextfieldEmphasis {
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+
+.ButtonClickMe {
+	-fx-background-color: #00C000;
+	
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+.ButtonReturn {
+	-fx-background-color: #FF7F50;
+	
+	-fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+	-fx-font-size: 14px;
+}
+
+.toggle-button {
+	-fx-background-color: #E0E0E0;
+ 	-fx-border-color: #D0D0D0;
+ 	-fx-focus-color: #D0D0D0;
+ 	-fx-border-width: 2;
+}
+
+.toggle-button:selected {
+ 	-fx-border-color: #000000;
+ 	-fx-focus-color: #000000;
+ 	-fx-border-width: 2;
+}
+
+.toggle-button:disabled {
+ 	-fx-opacity: 1.0;
+}

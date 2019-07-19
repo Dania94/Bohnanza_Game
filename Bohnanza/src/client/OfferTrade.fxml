@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<VBox stylesheets="@uistyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label styleClass="LabelEmphasis" text="Welche Karten moechtest du zum Tausch anbieten?" />
+		
+		<HBox alignment="CENTER" spacing="5.0">
+			<children>
+		
+				<VBox alignment="TOP_CENTER" spacing="5.0" styleClass="LightGrayBackground" GridPane.columnIndex="0" GridPane.rowIndex="0">
+					<children>
+						<Label alignment="TOP_CENTER" text="Zwei Karten vom Kartenstapel:" />
+						<HBox alignment="TOP_CENTER" spacing="10.0">
+							<children>
+								<ToggleButton fx:id="cardImageDraw1Button">
+									<graphic>
+										<ImageView fx:id="cardImageDraw1" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+									</graphic>
+								</ToggleButton>
+								<ToggleButton fx:id="cardImageDraw2Button">
+									<graphic>
+										<ImageView fx:id="cardImageDraw2" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+									</graphic>
+								</ToggleButton>
+							</children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+						</HBox>
+					</children>
+			         <GridPane.margin>
+			            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			         </GridPane.margin>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+				</VBox>
+				
+				<VBox fx:id="handkartenHalter" alignment="CENTER" styleClass="LightGrayBackground">
+					<children>
+						<Label alignment="TOP_CENTER" text="Handkarten:" />
+					</children>
+				</VBox>
+			</children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+		</HBox>
+
+		<!-- <HBox alignment="CENTER_RIGHT" spacing="5.0">
+			<children>
+				<Button mnemonicParsing="false" onAction="#sendOffer" text="Angebot versenden" />
+   				<Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelOffer" text="Abbrechen" />	
+			</children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+		</HBox> -->
+   		
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

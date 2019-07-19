@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<VBox alignment="CENTER" spacing="5.0" stylesheets="@uistyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label alignment="TOP_CENTER" contentDisplay="CENTER" styleClass="LabelEmphasis" text="Spiel beendet!" textAlignment="CENTER" />
+		
+		<Label fx:id="reasonLabel" alignment="TOP_CENTER" styleClass="LabelEmphasis" text="REASON" />
+		
+		<Label alignment="TOP_LEFT" text="Taler zum Endzeitpunkt:" />
+		
+		<TextArea fx:id="punkteArea" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
